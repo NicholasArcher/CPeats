@@ -1,0 +1,55 @@
+.logoimg{
+width:20%;
+
+}
+.title{
+  width:100%;
+  text-align: center;
+}
+
+body{
+
+  background-color: red;
+}
+
+a{
+font-family:serif;
+}
+
+h1{
+  font-family:serif;
+}
+h2{
+  font-family:serif;
+}
+.boxA{
+  background-color: #ff9696;
+  margin:5%;
+  padding: 5%;
+}
+.boxB{
+color:black;
+margin:5%;
+text-align: center;
+overflow: auto;
+
+}
+.imgA{
+  margin-left: 10%;
+  max-width:80%;
+}
+.restimg{
+  float:left;
+  width:100%;
+}
+.imgcolumn{
+float:left;
+width:25%;
+}
+
+.textcolumn{
+  float: left;
+  width: 70%;
+  margin-left: 5%;
+  text-align: left;
+}

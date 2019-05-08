@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>CP Eats</title>
+
+  <head>
+    <title>CP Eats</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/home.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+
+    <nav class="navbar navbar-inverse">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="./index.html"><img class="logoimg" src=./imgs/logo.png> </img> </a> </div> <div
+              class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav">
+              <li class="active"><a href="./CPeatsSearchPage.HTML">Search</a></li>
+              <li class="dropdown">
+                <a class="dropdown-toggle" data-toggle="dropdown" href="./Recomendations.html">Recomendations <span
+                    class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <li><a href="./FamilyFriendly.html">Family Friendly</a></li>
+                  <li><a href="./HappyHour.html">Happy Hour Deals</a></li>
+                  <li><a href="./LateNight.html">Late Night</a></li>
+                </ul>
+              </li>
+
+            </ul>
+        </div>
+      </div>
+    </nav>
+
+    <script>
+      function validateForm() {
+        var project_name = document.forms["peerEval"]["project_name"].value;
+        toReturn = true;
+        if ((project_name == "")) {
+          alert("Team name is required");
+          toReturn = false;
+        }
+
+        if (project_name.toLowerCase().indexOf("select") > -1) {
+          alert("Team name may not include \"Select\"");
+          toReturn = false;
+
+          if (project_name.toLowerCase().indexOf("from") > -1) {
+            alert("Team name may not include \"From\"");
+            toReturn = false;
+          }
+        }
+
+        return toReturn;
+      }
+    </script>
+
+  </head>
+
+<body>
+  <div class="boxA">
+    <div class="boxB">
+
+      <form name="Restaurant" action="form_processor.php" method="post">
+        <label>Cuisine/Category <select name="category">
+            <option value="1">American/Burgers/BBQ</option>
+            <option value="2">Asian/Sushi</option>
+            <option value="3">BBQ</option>
+            <option value="4">Breakfast</option>
+            <option value="5">Coffee/Drinks</option>
+            <option value="6">Dessert</option>
+            <option value="7">Indian</option>
+            <option value="8">Italian/Pizza</option>
+            <option value="9">Mexican</option>
+            <option value="10">Sandwich/Deli</option>
+            <option value="11">Greek</option>
+
+          </select>
+        </label>
+        <div></div>
+
+        <label>Price Range <select name="price">
+            <option value="1">$</option>
+            <option value="2">$$</option>
+            <option value="3">$$$</option>
+          </select>
+        </label>
+        <div></div>
+
+        <button type="submit" name="submit" value="submit">Submit</button>
+      </form>
+    </div>
+  </div>
+</body>
+
+</html>

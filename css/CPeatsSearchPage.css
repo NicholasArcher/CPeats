@@ -1,0 +1,44 @@
+.topnav {
+    overflow: hidden;
+    display: flow-root;
+    color: white !important;
+    font-family: 'Roboto', sans-serif;
+
+}
+
+.topnav-Home {
+    float: left !important;
+    font-size: 35px !important;
+    padding: 14px 16px !important;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+    float: right;
+    text-align: center;
+    color: white;
+    padding: 25px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    transition: color 2s;
+}
+
+.topnav a:hover {
+    color: grey;
+}
+
+.topnav a.active {
+    color: grey;
+}
+
+body {
+    background-color: red;
+    font-family: 'Roboto', sans-serif;
+}
+
+.form-container {
+    width: 80%;
+    height: 80%;
+    margin-top: 2%;
+}
