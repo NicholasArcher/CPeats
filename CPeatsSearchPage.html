@@ -9,9 +9,10 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="./home.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
 
 
     <nav class="navbar navbar-inverse">
@@ -22,10 +23,10 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="./index.html"><img class="logoimg" src=./imgs/logo.png> </img> </a> </div> <div
+          <a class="navbar-brand" href="./index.html"><img class="logoimg" src=./Logo.png> </img> </a> </div> <div
               class="collapse navbar-collapse" id="myNavbar">
             <ul class="nav navbar-nav">
-              <li class="active"><a href="./CPeatsSearchPage.HTML">Search</a></li>
+              <li class="active"><a href="./CPeatsSearchPage.html">Search</a></li>
               <li class="dropdown">
                 <a class="dropdown-toggle" data-toggle="dropdown" href="./Recomendations.html">Recomendations <span
                     class="caret"></span></a>
@@ -41,44 +42,21 @@
       </div>
     </nav>
 
-    <script>
-      function validateForm() {
-        var project_name = document.forms["peerEval"]["project_name"].value;
-        toReturn = true;
-        if ((project_name == "")) {
-          alert("Team name is required");
-          toReturn = false;
-        }
 
-        if (project_name.toLowerCase().indexOf("select") > -1) {
-          alert("Team name may not include \"Select\"");
-          toReturn = false;
-
-          if (project_name.toLowerCase().indexOf("from") > -1) {
-            alert("Team name may not include \"From\"");
-            toReturn = false;
-          }
-        }
-
-        return toReturn;
-      }
-    </script>
 
   </head>
 
 <body>
   <div class="boxA">
     <div class="boxB">
-
+        <h2>Find your perfect restaurant now!</h2><br><br>
       <form name="Restaurant" action="form_processor.php" method="post">
         <label>Cuisine/Category <select name="category">
             <option value="1">American/Burgers/BBQ</option>
             <option value="2">Asian/Sushi</option>
-            <option value="3">BBQ</option>
             <option value="4">Breakfast</option>
             <option value="5">Coffee/Drinks</option>
             <option value="6">Dessert</option>
-            <option value="7">Indian</option>
             <option value="8">Italian/Pizza</option>
             <option value="9">Mexican</option>
             <option value="10">Sandwich/Deli</option>
@@ -95,6 +73,8 @@
           </select>
         </label>
         <div></div>
+
+
 
         <button type="submit" name="submit" value="submit">Submit</button>
       </form>

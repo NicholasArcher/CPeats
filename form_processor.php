@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
-    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="./home.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
 
@@ -29,10 +29,10 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="./index.html"><img class="logoimg" src=./imgs/logo.png> </img> </a> </div> <div
+          <a class="navbar-brand" href="./index.html"><img class="logoimg" src=./Logo.png> </img> </a> </div> <div
               class="collapse navbar-collapse" id="myNavbar">
             <ul class="nav navbar-nav">
-              <li class="active"><a href="./CPeatsSearchPage.HTML">Search</a></li>
+              <li class="active"><a href="./CPeatsSearchPage.html">Search</a></li>
               <li class="dropdown">
                 <a class="dropdown-toggle" data-toggle="dropdown" href="./Recomendations.html">Recomendations <span
                     class="caret"></span></a>
@@ -49,7 +49,7 @@
     </nav>
 <?php
 $dbuser = 'root';
-$dbpass = 'root';
+$dbpass = 'bluesky10';
 $dbname = 'cp_eats';
 
 $conn = new mysqli("localhost", $dbuser, $dbpass, $dbname);
@@ -114,9 +114,9 @@ $conn->close();
     <div class="boxB">
         <h3>Cuisine Category: <?php echo $category_row['category']; ?></h3>
         <h3>Price: <?php echo $price_row['price']; ?></h3>
-        
-        <?php 
-        
+
+        <?php
+
         ?>
         <table class="restaurantTable">
             <tr>
@@ -126,7 +126,7 @@ $conn->close();
                 <th>Website</th>
                 <th>Hours</th>
             </tr>
-            <?php 
+            <?php
                 echo $tableData;
             ?>
         </table>
